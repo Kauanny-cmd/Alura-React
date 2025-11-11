@@ -28,10 +28,15 @@ h1{
   font-family: 'Fjalla One', sans-serif;
 }
 
+p{
+  margin-bottom: 8px;
+}
+
 form{
   background-color: white;
   padding: 16px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 fieldset{
@@ -45,4 +50,64 @@ legend{
   font-weight: bold;
   padding: 0 8px;
   font-size: 18px;
+}
+
+input, select, textarea{
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+textarea{
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  width: auto;
+}
+
+input[type="color"]{
+  width: 40px;
+  padding: 0 6px;
+}
+
+label{
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid{
+  border-color: #d30d0d;
+}
+
+input:valid,
+select:valid,
+textarea:valid{
+  border-color: #087d08;
+}
+
+button{
+  width: 100px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: white;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover{
+  background-color: #087d08;
+  color: white;
+}
+
+button[type="reset"]:hover{
+  background-color: #ff5112;
+  color: white;
 }
