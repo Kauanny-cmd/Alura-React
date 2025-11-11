@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="culturama-favico.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Pesquisa Culturama</title>
   </head>
   <body>
     <header>
+      <img src="./img/logo-culturama.png" alt="Logo culturama" />
       <h1>Pesquisa</h1>
     </header>
     <section>
@@ -17,7 +26,14 @@
           <input id="name" type="text" name="userName" required />
           <br />
           <label for="age">Idade</label>
-          <input id="age" type="number" name="userAge" min="12" max="100" required />
+          <input
+            id="age"
+            type="number"
+            name="userAge"
+            min="12"
+            max="100"
+            required
+          />
           <br />
           <label for="birthDate">Data de nascimento</label>
           <input id="birthDate" type="date" name="birthDate" />
@@ -27,7 +43,7 @@
           <br />
           <label for="phone">Telefone</label>
           <input
-          id="phone"
+            id="phone"
             type="tel"
             name="userPhoneNumber"
             pattern="[0-9]{11}"
@@ -41,15 +57,20 @@
         <fieldset>
           <legend>Perfil</legend>
           <p>Gênero:</p>
-          <input id="fem" type="radio" name="userGender" value="Feminino">
+          <input id="fem" type="radio" name="userGender" value="Feminino" />
           <label for="fem">Feminino</label>
-          
-          <input id="masc" type="radio" name="userGender" value="Masculino">
+
+          <input id="masc" type="radio" name="userGender" value="Masculino" />
           <label for="masc">Masculino</label>
-          
-          <input id="notInformed" type="radio" name="userGender" value="notInformed">
+
+          <input
+            id="notInformed"
+            type="radio"
+            name="userGender"
+            value="notInformed"
+          />
           <label for="notInformed">Prefiro não informar</label>
-          <br>
+          <br />
 
           <label for="maritalStatus">Estado Civil:</label>
           <select id="maritalStatus" name="userMaritalStatus">
@@ -57,9 +78,9 @@
             <option value="solteiro">Solteiro(a)</option>
             <option value="casado">Casado(a)</option>
             <option value="divorciado">Divorciado(a)</option>
-            <option value="casado">União estável</option> 
+            <option value="casado">União estável</option>
           </select>
-          <br>
+          <br />
 
           <label for="state">Estado:</label>
           <select id="state" name="userState" required>
@@ -91,68 +112,108 @@
             <option value="sergipe">Sergipe</option>
             <option value="tocatins">Tocantins</option>
           </select>
-          <br>
+          <br />
 
           <label for="city">Cidade:</label>
-          <input id="city" type="text" name="userCity" placeholder="Ex.: Fortaleza" />
-
+          <input
+            id="city"
+            type="text"
+            name="userCity"
+            placeholder="Ex.: Fortaleza"
+          />
         </fieldset>
 
         <fieldset>
           <legend>Hábitos</legend>
           <p>Redes Sociais:</p>
-          <input id="instagram" type="checkbox" name="social" value="instagram">
+          <input
+            id="instagram"
+            type="checkbox"
+            name="social"
+            value="instagram"
+          />
           <label for="instagram">Instagram</label>
-          <br>
-          <input id="facebook" type="checkbox" name="social" value="facebook">
+          <br />
+          <input id="facebook" type="checkbox" name="social" value="facebook" />
           <label for="facebook">Facebook</label>
-          <br>
-          <input id="linkedin" type="checkbox" name="social" value="linkedin">
+          <br />
+          <input id="linkedin" type="checkbox" name="social" value="linkedin" />
           <label for="linkedin">LinkedIn</label>
-          <br>
-          <input id="X" type="checkbox" name="social" value="X">
+          <br />
+          <input id="X" type="checkbox" name="social" value="X" />
           <label for="X">X</label>
-          <br>
+          <br />
 
           <label for="musicStyle">Estilo musical:</label>
-          <input type="text" name="userMusicSTyle" id="musicStyle" list="musicTypes">
+          <input
+            type="text"
+            name="userMusicSTyle"
+            id="musicStyle"
+            list="musicTypes"
+          />
           <datalist id="musicTypes">
-            <option value="Rock">
-            <option value="Pop">
-            <option value="Sertanejo">
-            <option value="Funk">
-            <option value="Clássica">
+            <option value="Rock"></option>
+            <option value="Pop"></option>
+            <option value="Sertanejo"></option>
+            <option value="Funk"></option>
+            <option value="Clássica"></option>
           </datalist>
-          <br>
+
+          <br />
 
           <label for="favoriteColor">Cor favorita:</label>
-          <input type="color" name="userFavoriteColor" id="favoriteColor">
+          <input type="color" name="userFavoriteColor" id="favoriteColor" />
         </fieldset>
 
         <fieldset>
           <legend>Opnião</legend>
           <p>O que você achou sobre a qualidade dos nossos serviços?</p>
-          <input id="otima" type="radio" name="userServiceOpnion" value="otima">
+          <input
+            id="otima"
+            type="radio"
+            name="userServiceOpnion"
+            value="otima"
+          />
           <label for="otima">Ótima</label>
-          <input id="boa" type="radio" name="userServiceOpnion" value="boa">
+          <input id="boa" type="radio" name="userServiceOpnion" value="boa" />
           <label for="boa">Boa</label>
-          <input id="regular" type="radio" name="userServiceOpnion" value="regular">
+          <input
+            id="regular"
+            type="radio"
+            name="userServiceOpnion"
+            value="regular"
+          />
           <label for="regular">Regular</label>
-          <input id="ruim" type="radio" name="userServiceOpnion" value="ruim">
+          <input id="ruim" type="radio" name="userServiceOpnion" value="ruim" />
           <label for="ruim">Ruim</label>
-          <br>
-          
+          <br />
+
           <label for="comment">Escreva sua opnião:</label>
-          <textarea name="userComment" id="comment" placeholder="Deixe aqui sua opinião..."></textarea>
+          <textarea
+            name="userComment"
+            id="comment"
+            placeholder="Deixe aqui sua opinião..."
+          ></textarea>
         </fieldset>
 
         <fieldset>
           <legend>Confirmações</legend>
-          <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accepted" required>
+          <input
+            type="checkbox"
+            name="userLgpd"
+            id="userLgpdTerm"
+            value="accepted"
+            required
+          />
           <label for="userLgpdTerm">Eu aceito participar da pesquisa.</label>
-          <br>
+          <br />
 
-          <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
+          <input
+            type="checkbox"
+            name="userGetResult"
+            id="getResult"
+            value="accepted"
+          />
           <label for="getResult">Desejo receber o resultado por email..</label>
         </fieldset>
         <button type="submit">Enviar</button>
