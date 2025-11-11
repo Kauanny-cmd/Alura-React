@@ -28,6 +28,11 @@ h1{
   font-family: 'Fjalla One', sans-serif;
 }
 
+#success{
+  text-align: center;
+  margin: 50px;
+}
+
 p{
   margin-bottom: 8px;
 }
